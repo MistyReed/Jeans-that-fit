@@ -1,0 +1,35 @@
+<form ng-submit="saveParty()" class="form-inline" role="form" >
+  <div class="form-group">
+    <label class="sr-only" for="partyName">Party name</label>
+    <input ng-model="party.name" type="text" class="form-control" id="partyName" placeholder="Name">
+  </div>
+  
+  <div class="form-group">
+    <label class="sr-only" for="phoneNumber">Phone number</label>
+    <input ng-model="party.phone" type="text" class="form-control" id="phoneNumber" placeholder="Phone">
+  </div>
+
+  <div class="form-group">
+    <label class="sr-only" for="sizeOfParty">Size of Party</label>
+    <input ng-model="party.size" type="text" class="form-control" id="sizeOfParty" placeholder="Size of Party">
+  </div>
+<button type="submit" class="btn btn-primary">Add Party</button>
+</form>
+
+{{party}}
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+		  <td>Done?</td>
+		  <td>Info</td>	
+      <td>Notified?</td>
+      <td>Actions</td>
+		</tr>
+	</thead>
+        <tr ng-repeat="party in parties">
+            
+
+        </tr>
+
+</table>
+
